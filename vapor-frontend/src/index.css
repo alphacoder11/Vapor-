@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #1b2838;
+  --bg-secondary: #16202d;
+  --bg-tertiary: #0f1923;
+  --bg-card: #1e2d3d;
+  --bg-hover: #2a475e;
+  --accent-blue: #1a9fff;
+  --accent-blue-hover: #66c0f4;
+  --accent-green: #4caf50;
+  --accent-gold: #c7a84c;
+  --text-primary: #c6d4df;
+  --text-secondary: #8f98a0;
+  --text-highlight: #ffffff;
+  --text-dim: #5a6a72;
+  --border-color: #2a475e;
+  --vapor-purple: #7b5fff;
+  --vapor-purple-light: #a488ff;
+  --danger: #e74c3c;
+  --success: #27ae60;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-hover);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.badge-new { background: var(--accent-blue); color: #fff; }
+.badge-sale { background: var(--danger); color: #fff; }
+.badge-popular { background: var(--vapor-purple); color: #fff; }
+.badge-free { background: var(--success); color: #fff; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-blue), #1577b5);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--accent-blue-hover), var(--accent-blue));
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+.btn-secondary:hover {
+  background: #355474;
+  color: var(--text-highlight);
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, var(--vapor-purple), #5b3fbf);
+  color: #fff;
+}
+.btn-purple:hover {
+  background: linear-gradient(135deg, var(--vapor-purple-light), var(--vapor-purple));
+  transform: translateY(-1px);
+}
+
+.btn-green {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: #fff;
+}
+.btn-green:hover {
+  background: linear-gradient(135deg, #66bb6a, #4caf50);
+  transform: translateY(-1px);
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-highlight);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.price-tag {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-blue-hover);
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.discount-badge {
+  background: var(--accent-green);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: var(--text-secondary);
+}
+
+.grid-games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-games {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
