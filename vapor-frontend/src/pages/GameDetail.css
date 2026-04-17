@@ -107,6 +107,26 @@
 }
 
 /* Content */
+.game-detail-description {
+  margin-bottom: 40px;
+}
+
+.game-detail-description h3 {
+  color: var(--text-highlight);
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.game-detail-trailer {
+  margin-bottom: 40px;
+}
+
+.game-detail-trailer h3 {
+  color: var(--text-highlight);
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
 .game-detail-header {
   margin-bottom: 20px;
 }

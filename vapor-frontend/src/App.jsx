@@ -6,6 +6,7 @@ import Store from './pages/Store'
 import GameDetail from './pages/GameDetail'
 import Cart from './pages/Cart'
 import PointsStore from './pages/PointsStore'
+import About from './pages/About'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/game/:id" element={<GameDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/points" element={<PointsStore />} />
+          <Route path="/about" element={<About />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>

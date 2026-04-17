@@ -59,6 +59,7 @@ export default function Navbar() {
           <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={() => setMobileOpen(false)}>Home</Link>
           <Link to="/store" className={`nav-link ${isActive('/store') ? 'active' : ''}`} onClick={() => setMobileOpen(false)}>Store</Link>
           <Link to="/points" className={`nav-link ${isActive('/points') ? 'active' : ''}`} onClick={() => setMobileOpen(false)}>Points</Link>
+          <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`} onClick={() => setMobileOpen(false)}>About</Link>
         </div>
 
         <div className="navbar-right">

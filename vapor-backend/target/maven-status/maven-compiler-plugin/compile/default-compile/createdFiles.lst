@@ -1,0 +1,8 @@
+com\vapor\servlets\GameServlet.class
+com\vapor\config\DatabaseConfig.class
+com\vapor\servlets\UserServlet.class
+com\vapor\models\User.class
+com\vapor\models\Order.class
+com\vapor\models\Game.class
+com\vapor\servlets\OrderServlet.class
+com\vapor\util\DataInitializer.class

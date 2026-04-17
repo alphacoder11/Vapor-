@@ -126,7 +126,10 @@ export default function GameDetail() {
               </div>
             </div>
 
-            <p className="game-detail-desc">{game.description}</p>
+            <div className="game-detail-description">
+              <h3>About This Game</h3>
+              <p>{game.description}</p>
+            </div>
 
             <div className="game-detail-reviews">
               <h3>Overall Reviews</h3>
